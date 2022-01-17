@@ -60,6 +60,7 @@ p{
 
 .navbar {
 	border-bottom: 2px solid;
+	background-color: #fff
 }
 
 .navbar_container {
@@ -107,4 +108,10 @@ p{
 
 .main_body {
 	margin-top: 45px;
+}
+
+#gallery_image1 {
+	width: 325px;
+	height: 200px;
+	float: right;
 }
