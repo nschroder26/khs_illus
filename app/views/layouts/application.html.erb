@@ -11,9 +11,10 @@
   </head>
 
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "KHS Illustration", '#', id: "logo" %>
+    <header class="navbar navbar-fixed-top navbar">
+      <div class="container navbar_container">
+        <%= link_to image_tag("KHSlogo.jpg", alt: "Site logo", id: "logo"), 
+          "https://google.com" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home", '#' %></li>
