@@ -17,6 +17,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "#{@base_title}"
   end
 
+  test "should get gallery" do
+    get static_pages_gallery_url
+    assert_response :success
+    assert_select "title", "Gallery | #{@base_title}"
+  end
+
   test "should get about" do
     get static_pages_about_url
     assert_response :success
