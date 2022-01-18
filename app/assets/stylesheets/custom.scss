@@ -1,11 +1,8 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
 
 
 /* universal */
-body {
-  padding-top: 60px;
-}
+
 section {
   overflow: auto;
 }
@@ -65,7 +62,7 @@ p{
 
 .navbar_container {
 	margin-left: 10px;
-	width: 800px;
+	width: auto;
 }
 
 .navbar-right {
