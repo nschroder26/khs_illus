@@ -72,6 +72,11 @@ p{
 	color: black;
 }
 
+.site_nav > li > a:hover {
+	text-shadow: 1px 1px 15px #2e2e2ef2;
+}
+
+
 
 /* body */
 
@@ -153,4 +158,10 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+/* login page */
+
+.btn.btn-primary {
+	margin-top: 10px;
 }
