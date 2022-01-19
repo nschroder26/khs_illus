@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   get '/gallery', to: 'static_pages#gallery'
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
-  get '/login', to: 'static_pages#login'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/login', to: 'sessions#destroy'
+  resources :users
 end
