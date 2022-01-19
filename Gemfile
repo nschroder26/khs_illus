@@ -10,6 +10,9 @@ gem "rails", "~> 7.0.1"
 gem 'bootstrap', '~> 5.0.2'
 gem 'jquery-rails'
 
+# bcrypt
+gem "bcrypt"
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
