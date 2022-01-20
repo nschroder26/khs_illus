@@ -1,14 +1,21 @@
-<header class="navbar navbar-fixed-top">
-  <div class="container navbar_container">
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
     <%= link_to image_tag("KHSlogo.jpg", alt: "Site logo", id: "logo"), 
       root_path %>
-    <nav>
-      <ul class="nav navbar-right site_nav">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Gallery", gallery_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-      </ul>
-    </nav>
+      <button type="button" class="navbar-toggler" 
+          data-toggle="collapse" 
+          data-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><%= link_to "Home", root_path %></li>
+          <li class="nav-item"><%= link_to "Gallery", gallery_path %></li>
+          <li class="nav-item"><%= link_to "About", about_path %></li>
+          <li class="nav-item"><%= link_to "Contact", contact_path %></li>
+        </ul>
+      </div>
   </div>
-</header>
+</nav>

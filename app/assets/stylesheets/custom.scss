@@ -52,9 +52,11 @@ p{
     margin-left: 0px;
 }
 
-.navbar {
+.navbar.navbar-expand-md.navbar-light {
 	border-bottom: 2px solid;
-	background-color: #fff
+	background-color: #fff;
+	display: inline-block;
+	width: 100%;
 }
 
 .container.navbar_container {
@@ -67,9 +69,14 @@ p{
 	margin-top: 45px;
 }
 
-.site_nav > li > a {
+.nav-item a {
 	text-decoration: none;
 	color: black;
+	margin: 5px;
+}
+
+.navbar-light {
+	border-bottom: none
 }
 
 .site_nav > li > a:hover {
@@ -102,7 +109,7 @@ p{
   left: 0px;
 	opacity: .7;
 	border-radius: 20px;
-	background-position: 1px 291px;
+	background-position: 1px 195px;
 }
 
 .center.jumbotron > h1, p {
