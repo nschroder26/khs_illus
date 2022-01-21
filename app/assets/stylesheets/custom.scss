@@ -83,6 +83,9 @@ p{
 	text-shadow: 1px 1px 15px #2e2e2ef2;
 }
 
+.navbar-nav {
+	margin-left: 15px;
+}
 
 
 /* body */
@@ -109,7 +112,7 @@ p{
   left: 0px;
 	opacity: .7;
 	border-radius: 20px;
-	background-position: 1px 195px;
+	background-position: 1px -57px;
 }
 
 .center.jumbotron > h1, p {
@@ -122,6 +125,8 @@ p{
 
 .main_body {
 	margin-top: 25px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .gallery_preview {
@@ -130,14 +135,12 @@ p{
 
 #gallery_image1 {
 	width: 325px;
-	height: 200px;
-	float: right;
+	height: 400px;
 }
 
 #gallery_image2 {
 	width: 300px;
 	height: 400px;
-	float: right;
 }
 
 
