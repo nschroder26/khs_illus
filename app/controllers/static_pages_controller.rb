@@ -3,6 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def gallery
+    @artworks = Artwork.all
   end
 
   def about

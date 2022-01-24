@@ -175,3 +175,25 @@ footer ul li {
 .btn.btn-primary {
 	margin-top: 10px;
 }
+
+/* gallery */
+.artworks {
+	list-style: none;
+}
+
+.artworks_title, .artworks_content {
+	display: block;
+}
+
+.gallery_title{
+	margin-bottom: 50px;
+}
+
+.artworks_title {
+	margin-top: 25px;
+}
+
+.artworks_content {
+	padding-bottom: 15px;
+	border-bottom: 1px solid lightgray;
+}

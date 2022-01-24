@@ -1,2 +1,9 @@
 <% provide(:title, "Gallery") %>
-<h1>Gallery List</h1>
+<div class="coll">
+	<% if @artworks.any? %>
+		<h1 class="gallery_title">Gallery</h1>
+		<ol class="artworks">
+			<%= render @artworks %>
+		</ol>
+	<% end %>
+</div>
