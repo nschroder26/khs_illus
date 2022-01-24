@@ -1,4 +1,13 @@
 <% provide(:title, "Gallery") %>
+
+ <% if logged_in? %>
+ 	<div class="row">
+		<section class="artwork_form">
+			<%= render 'shared/artwork_form' %>
+		</section>
+	</div>
+<% end %>
+
 <div class="coll">
 	<% if @artworks.any? %>
 		<h1 class="gallery_title">Gallery</h1>

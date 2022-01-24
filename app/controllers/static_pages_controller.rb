@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
 
   def gallery
     @artworks = Artwork.all
+    @artwork = Artwork.create if logged_in?
   end
 
   def about
