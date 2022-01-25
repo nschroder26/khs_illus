@@ -1,4 +1,9 @@
 <li id="artwork-<%= artwork.id %>">
 	<h4 class="artworks_title"><%= artwork.title %></h4>
-	<span class="artworks_content"><%= artwork.content %></span>
+	<span class="artworks_content"><%= artwork.content %>
+		<% if logged_in? %>
+		 	<%= link_to "delete", artwork, method: :delete,
+		 		data: { confirm: "Are you sure?" } %>
+		<% end %>
+	</span>
 </li>
