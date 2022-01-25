@@ -1,9 +1,10 @@
 <li id="artwork-<%= artwork.id %>">
 	<h4 class="artworks_title"><%= artwork.title %></h4>
-	<span class="artworks_content"><%= artwork.content %>
+	<div>
 		<% if logged_in? %>
-		 	<%= link_to "delete", artwork, method: :delete,
+		 	<%= link_to "Delete", artwork, method: :delete,
 		 		data: { confirm: "Are you sure?" } %>
 		<% end %>
-	</span>
+	</div>
+	<span class="artworks_content"><%= artwork.content %></span>
 </li>
