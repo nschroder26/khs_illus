@@ -6,5 +6,8 @@
 		 		data: { confirm: "Are you sure?" } %>
 		<% end %>
 	</div>
-	<span class="artworks_content"><%= artwork.content %></span>
+	<span class="artworks_content">
+		<%= artwork.content %>
+		<%= image_tag artwork.image if artwork.image.attached? %>
+	</span>
 </li>

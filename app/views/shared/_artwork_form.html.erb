@@ -6,5 +6,8 @@
 	<div class="content_field">
 		<%= f.text_area :content, required: true, placeholder: "Artwork description..." %>
 	</div>
+	<span class="image">
+		<%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+	</span>
 	<%= f.submit "Submit", class: "btn btn-primary submit_button" %> 
 <% end %>
