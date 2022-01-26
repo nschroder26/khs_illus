@@ -13,6 +13,10 @@ gem 'jquery-rails'
 # bcrypt
 gem "bcrypt"
 
+# image processing
+gem 'image_processing'
+gem 'mini_magick'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
