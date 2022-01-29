@@ -3,7 +3,6 @@ class ArtworksController < ApplicationController
 
 	def create
 		@artwork = Artwork.create(artwork_params)
-		@artwork.image.attach(params[:artwork][:image])
 		if @artwork.save
 			flash[:success] = "Artwork saved!"
 			redirect_to gallery_url

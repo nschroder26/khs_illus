@@ -99,6 +99,7 @@ p{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	padding-left: 40px;
+	margin-bottom: 40px;
 }
 
 .center.jumbotron::before {
@@ -144,7 +145,11 @@ p{
 }
 
 
+
 /* footer */
+
+
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -170,13 +175,20 @@ footer ul li {
   margin-left: 15px;
 }
 
+
+
 /* login page */
 
 
 
+
 /* gallery */
+
+
+
 .artworks {
 	list-style: none;
+	padding: 0px 15px;
 }
 
 .artworks_title, .artworks_content {
@@ -192,6 +204,11 @@ footer ul li {
 }
 
 .artworks_content {
+	padding-bottom: 15px;
+	border-bottom: 1px solid lightgray;
+}
+
+.home_artwork {
 	padding-bottom: 15px;
 	border-bottom: 1px solid lightgray;
 }
@@ -221,4 +238,21 @@ footer ul li {
 
 .alert {
 	margin: 3% 10% 0%;
+}
+
+.col-md-6 > img {
+	max-width: 100%;
+}
+
+.img_link {
+	border: none;
+	background: none;
+}
+
+.col-md-6 {
+	margin: 10px 0px;
+}
+
+ol {
+	padding: none
 }

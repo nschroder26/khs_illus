@@ -4,27 +4,14 @@
 			Painting & Illustration
 		</p>
 </div>
-<div class="container">
-	<div class="gallery_preview">
-		<h3>Sample Title<h3>
+<div class="row home_artwork">
+	<h4 class="artworks_title"><%= @artwork.title %></h4>
+	<div class="col-md-6">
+		<%= @artwork.content %>
 	</div>
-	<div class= "row">
-		<div class="col">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet sed euismod nisi porta lorem. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vel eros donec ac odio tempor.
-		</div>
-		<div class="col">
-			<%= link_to image_tag("Bahama's.jpg", id: "gallery_image1"), gallery_path %>
-		</div>
-	</div>
-	<div class="gallery_preview">
-		<h3>Sample Title<h3>
-	</div>
-	<div class= "row gallery_preview">
-		<div class="col">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet sed euismod nisi porta lorem. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vel eros donec ac odio tempor.
-		</div>
-		<div class="col">
-			<%= link_to image_tag("Turks.jpg", id: "gallery_image2"), gallery_path %>
-		</div>
+	<div class="col-md-6">
+		<% if @artwork.image.attached? %>
+			<%= image_tag @artwork.image %>
+		<% end %>
 	</div>
 </div>

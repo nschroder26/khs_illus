@@ -6,8 +6,14 @@
 		 		data: { confirm: "Are you sure?" } %>
 		<% end %>
 	</div>
-	<span class="artworks_content">
-		<%= artwork.content %>
-		<%= image_tag artwork.image if artwork.image.attached? %>
+	<span class="row artworks_content">
+		<div class="col-md-6">
+			<%= artwork.content %>
+		</div>
+		<div class="col-md-6">
+			<% if artwork.image.attached? %>
+				<%= image_tag artwork.image %>
+			<% end %>
+		</div>
 	</span>
 </li>
