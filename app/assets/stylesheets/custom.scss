@@ -71,8 +71,12 @@ p{
 
 .nav-item a {
 	text-decoration: none;
-	color: black;
+	color: #000000c7;
 	margin: 5px;
+}
+
+.nav-item a:hover {
+	color: black
 }
 
 .navbar-light {

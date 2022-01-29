@@ -1,16 +1,16 @@
 <nav class="navbar navbar-expand-md navbar-light">
-  <div class="container">
+  <div class="container-fluid">
     <%= link_to image_tag("KHSlogo.jpg", alt: "Site logo", id: "logo"), 
       root_path %>
       <button type="button" class="navbar-toggler" 
-          data-toggle="collapse" 
-          data-target="#menu"
+          data-bs-toggle="collapse" 
+          data-bs-target="#menu"
           aria-controls="menu"
           aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><%= link_to "Home", root_path %></li>
           <li class="nav-item"><%= link_to "Gallery", gallery_path %></li>
           <li class="nav-item"><%= link_to "About", about_path %></li>
