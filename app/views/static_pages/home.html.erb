@@ -5,13 +5,17 @@
 		</p>
 </div>
 <div class="row home_artwork">
-	<h4 class="artworks_title"><%= @artwork.title %></h4>
-	<div class="col-md-6">
-		<%= @artwork.content %>
-	</div>
-	<div class="col-md-6">
-		<% if @artwork.image.attached? %>
-			<%= image_tag @artwork.image class: "image-jpg" %>
-		<% end %>
-	</div>
+	<% if Artwork.any? %>
+		<h4 class="artworks_title">
+			<%= @artwork.title %>
+		</h4>
+		<div class="col-md-6">
+			<%= @artwork.content %>
+		</div>
+		<div class="col-md-6">
+			<% if @artwork.image.attached? %>
+				<%= image_tag @artwork.image %>
+			<% end %>
+		</div>
+	<% end %>
 </div>
