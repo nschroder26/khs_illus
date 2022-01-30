@@ -31,9 +31,11 @@
 	  </div>
 	</div>
 </div>
+
 <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#review-modal">
   Leave a Review!
 </button>
+
 <div class="modal fade" id="review-modal" tabindex="-1" 
 	aria-labelledby="review-modal" aria-hidden="true">
 	<div class="modal-dialog">
@@ -42,19 +44,19 @@
 				<h5 class="modal-title" id="rev-modal-title">Your Review</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
-			<div class="modal-body">
-				<form>
+			<%= form_with(model: @review) do |f| %>
+				<div class="modal-body">
 					<div class="mb-3">
-						<input type="text" class="form-control" id="reviewer-name" placeholder="Your name">
+						<%= f.text_field :name, required: true, placeholder: "Your name..." %>
 					</div>
-					<div class="mb-1">
-						<textarea class="form-control" id="review-text" placeholder="Your review"></textarea>
+					<div class="mb-1" id="review-text">
+						<%= f.text_area :content, required: true, placeholder: "Your review..." %>
 					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary">Submit</button>
-			</div>
+				</div>
+				<div class="modal-footer">
+					<%= f.submit "Submit", class: "btn btn-primary submit_button"%>
+				</div>
+			<% end %>
 		</div>
 	</div>
 </div>

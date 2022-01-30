@@ -1,0 +1,8 @@
+<div class="col">
+	<% if @reviews.any? %>
+		<h1 class="reviews-title">Reviews</h1>
+		<div class="reviews">
+			<%= render @reviews %>
+		</div>
+	<% end %>
+</div>

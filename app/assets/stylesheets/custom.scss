@@ -139,7 +139,7 @@ p{
 }
 
 
-/* reviews */
+/* homepage reviews */
 
 .review_title {
 	color: black;
@@ -165,7 +165,12 @@ p{
 	margin: 0px 8px;
 }
 
-#review-text {
+.mb-3 input {
+	width: 100%;
+}
+
+.mb-1 textarea {
+	width: 100%;
 	resize: none;
   height: 15vw;
 }
@@ -280,3 +285,30 @@ footer ul li {
 ol {
 	padding: none
 }
+
+
+
+/* reviews */
+
+
+
+.reviews-title {
+	margin-bottom: 30px;	
+}
+
+.reviews {
+	list-style: none;
+}
+
+.reviews li {
+	border-bottom: 1px solid lightgrey;
+	margin-bottom: 10px;
+}
+
+.review-poster {
+	margin-bottom: 15px;
+}
+
+
+
+

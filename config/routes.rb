@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+  post '/', to: 'reviews#create'
+  get '/reviews', to: 'static_pages#reviews'
   resources :users
   resources :artworks,  only: [:create, :destroy]
   resources :reviews, only: [:create, :destroy]
