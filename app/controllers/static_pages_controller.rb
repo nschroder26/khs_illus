@@ -1,8 +1,9 @@
 class StaticPagesController < ApplicationController
   def home
-    count = Artwork.count
-    rand_offset = rand(count)
-    @artwork = Artwork.offset(rand_offset).first
+    art_count = Artwork.count
+    art_offset = rand(art_count)
+    @artwork = Artwork.offset(art_offset).first
+    @rev_rand = Review.limit(3).order("Random()")
   end
 
   def gallery
