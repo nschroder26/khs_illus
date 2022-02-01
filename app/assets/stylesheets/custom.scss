@@ -312,3 +312,29 @@ ol {
 
 
 
+/* contact */
+
+
+
+.container.contact-form {
+	padding: 0px 8vw;
+}
+
+form .modal-footer {
+	border-top: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.contact-message textarea {
+	resize: none;
+	height: 25vh;
+}
+
+.contact-message {
+	margin-bottom: 5px;
+}
+
+.contact-note {
+	font-size: .8em;
+}
