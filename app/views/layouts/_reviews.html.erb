@@ -1,64 +1,62 @@
 <h2 class="review_title">Reviews</h2>
-<% if Review.any? %>
-	<div class="row all-reviews">
-		<div class="card text-black bg-light mb-3 col-md">
-		  <div class="card-body">
-		    <blockquote class="blockquote mb-0">
-		      <p>"<%= @rev_rand[0].content %>"</p>
-		      <footer class="blockquote-footer">
-		      	<cite title="Source Title"><%= @rev_rand[0].name %></cite>
-		      </footer>
-		    </blockquote>
-		  </div>
-		</div>
-		<div class="card text-dark bg-light mb-3 col-md">
-		  <div class="card-body">
-		    <blockquote class="blockquote mb-0">
-		      <p>"<%= @rev_rand[1].content %>"</p>
-		      <footer class="blockquote-footer">
-		      	<cite title="Source Title"><%= @rev_rand[1].name %></cite>
-		      </footer>
-		    </blockquote>
-		  </div>
-		</div>
-		<div class="card text-black bg-light mb-3 col-md">
-		  <div class="card-body">
-		    <blockquote class="blockquote mb-0">
-		      <p>"<%= @rev_rand[2].content %>"</p>
-		      <footer class="blockquote-footer">
-		      	<cite title="Source Title"><%= @rev_rand[2].name %></cite>
-		      </footer>
-		    </blockquote>
-		  </div>
-		</div>
+<div class="row all-reviews">
+	<div class="card text-black bg-light mb-3 col-md">
+	  <div class="card-body">
+	    <blockquote class="blockquote mb-0">
+	      <p>"<%= @rev_rand[0].content %>"</p>
+	      <footer class="blockquote-footer">
+	      	<cite title="Source Title"><%= @rev_rand[0].name %></cite>
+	      </footer>
+	    </blockquote>
+	  </div>
 	</div>
+	<div class="card text-dark bg-light mb-3 col-md">
+	  <div class="card-body">
+	    <blockquote class="blockquote mb-0">
+	      <p>"<%= @rev_rand[1].content %>"</p>
+	      <footer class="blockquote-footer">
+	      	<cite title="Source Title"><%= @rev_rand[1].name %></cite>
+	      </footer>
+	    </blockquote>
+	  </div>
+	</div>
+	<div class="card text-black bg-light mb-3 col-md">
+	  <div class="card-body">
+	    <blockquote class="blockquote mb-0">
+	      <p>"<%= @rev_rand[2].content %>"</p>
+	      <footer class="blockquote-footer">
+	      	<cite title="Source Title"><%= @rev_rand[2].name %></cite>
+	      </footer>
+	    </blockquote>
+	  </div>
+	</div>
+</div>
 
-	<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#review-modal">
-	  Leave a Review!
-	</button>
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#review-modal">
+  Leave a Review!
+</button>
 
-	<div class="modal fade" id="review-modal" tabindex="-1" 
-		aria-labelledby="review-modal" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="rev-modal-title">Your Review</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<%= form_with(model: @review) do |f| %>
-					<div class="modal-body">
-						<div class="mb-3">
-							<%= f.text_field :name, required: true, placeholder: "Your name..." %>
-						</div>
-						<div class="mb-1" id="review-text">
-							<%= f.text_area :content, required: true, placeholder: "Your review..." %>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<%= f.submit "Submit", class: "btn btn-primary submit_button"%>
-					</div>
-				<% end %>
+<div class="modal fade" id="review-modal" tabindex="-1" 
+	aria-labelledby="review-modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="rev-modal-title">Your Review</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
+			<%= form_with(model: @review) do |f| %>
+				<div class="modal-body">
+					<div class="mb-3">
+						<%= f.text_field :name, required: true, placeholder: "Your name..." %>
+					</div>
+					<div class="mb-1" id="review-text">
+						<%= f.text_area :content, required: true, placeholder: "Your review..." %>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<%= f.submit "Submit", class: "btn btn-primary submit_button"%>
+				</div>
+			<% end %>
 		</div>
 	</div>
-<% end %>
+</div>

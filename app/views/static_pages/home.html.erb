@@ -6,4 +6,7 @@
 </div>
 
 <%= render 'layouts/body' %>
-<%= render 'layouts/reviews' %>
+
+<% if Review.any? %>
+	<%= render 'layouts/reviews' %>
+<% end %>
