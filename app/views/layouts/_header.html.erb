@@ -10,7 +10,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item"><%= link_to "Home", root_path %></li>
           <li class="nav-item"><%= link_to "Gallery", gallery_path %></li>
           <li class="nav-item"><%= link_to "About", about_path %></li>
@@ -20,6 +20,11 @@
               <%= link_to "Reviews", reviews_path %>
             </li>
           <% end %>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ig-logo-align">
+            <%= link_to image_tag("IG-color.jpg", alt: "ig-logo", id: "ig-logo"), 'https://www.instagram.com/watercolor_memories_by_kate/', target: :_blank %>
+          </li>
         </ul>
       </div>
   </div>
