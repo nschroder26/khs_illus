@@ -17,6 +17,9 @@ gem "bcrypt"
 gem "image_processing", "~> 1.2"
 gem "mini_magick"
 
+# pagination
+gem 'kaminari'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 

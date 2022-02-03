@@ -12,7 +12,9 @@
 	<% if @artworks.any? %>
 		<h1 class="gallery_title">Gallery</h1>
 		<div class="artworks">
+			<%= paginate @artworks %>
 			<%= render @artworks %>
+			<%= paginate @artworks %>
 		</div>
 	<% end %>
 </div>
