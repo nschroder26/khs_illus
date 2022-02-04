@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def gallery
-    @artworks = Artwork.page(params[:page]).per(2)
+    @artworks = Artwork.order(:name).page params[:page]
     @artwork = Artwork.create if logged_in?
   end
 

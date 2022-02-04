@@ -145,6 +145,10 @@ p{
 	margin-right: 50px;
 }
 
+.col-md-6 > img {
+	max-width: 100%;
+}
+
 
 /* homepage reviews */
 
@@ -232,7 +236,11 @@ footer ul li {
 }
 
 .gallery_title{
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+.pagination {
+	margin-top: 20px;
 }
 
 .artworks_title {
@@ -276,7 +284,12 @@ footer ul li {
 	margin: 3% 10% 0%;
 }
 
-.col-md-6 > img {
+.col-md-6 > button {
+	padding: 0px;
+	border: none;
+}
+
+.col-md-6 > button > img {
 	max-width: 100%;
 }
 
