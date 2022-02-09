@@ -50,7 +50,7 @@
 						<%= f.text_field :name, required: true, placeholder: "Your name..." %>
 					</div>
 					<div class="mb-1" id="review-text">
-						<%= f.text_area :content, required: true, placeholder: "Your review..." %>
+						<%= f.text_area :content, required: true, placeholder: "Your review...", maxlength: 200 %>
 					</div>
 				</div>
 				<div class="modal-footer">
