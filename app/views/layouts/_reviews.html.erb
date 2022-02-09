@@ -45,7 +45,7 @@
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<%= form_with(model: @review) do |f| %>
-				<div class="modal-body">
+				<div class="modal-body review-body">
 					<div class="mb-3">
 						<%= f.text_field :name, required: true, placeholder: "Your name..." %>
 					</div>
@@ -53,8 +53,14 @@
 						<%= f.text_area :content, required: true, placeholder: "Your review...", maxlength: 200 %>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<%= f.submit "Submit", class: "btn btn-primary submit_button"%>
+				<div class="modal-footer" style="align-items: flex-start;">
+					<div class="col review-note">
+						200 Character limit
+					</div>
+					<div class="col">
+						<%= f.submit "Submit", class: "btn btn-primary review-button"%>
+					</div>
+					
 				</div>
 			<% end %>
 		</div>

@@ -184,6 +184,20 @@ p{
 	width: 100%;
 	resize: none;
   height: 15vw;
+  margin-bottom: 0px;
+}
+
+.modal-body.review-body {
+	padding-bottom: 0px;
+}
+
+.review-note {
+	font-size: .75em;
+	margin-top: 0px;
+}
+
+.review-button {
+	float: right;
 }
 
 /* footer */
