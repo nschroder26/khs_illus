@@ -200,6 +200,8 @@ p{
 	float: right;
 }
 
+
+
 /* footer */
 
 
@@ -266,9 +268,10 @@ footer ul li {
 	border-bottom: 1px solid lightgray;
 }
 
-.home_artwork {
+.home-artwork {
 	padding-bottom: 15px;
 	border-bottom: 1px solid lightgray;
+	margin-bottom: 10px
 }
 
 .content_title {
@@ -326,8 +329,8 @@ ol {
 
 
 
-.reviews-title {
-	margin-bottom: 30px;	
+.review-title {
+	margin: 20px 0px;
 }
 
 .reviews {
@@ -343,7 +346,23 @@ ol {
 	margin-bottom: 15px;
 }
 
+.all-reviews {
+	background-image: url(Reviewbackground2.jpg);
+	background-size: cover;
+	padding: 2vw;
+}
 
+h2 {
+	color: black;
+}
+
+.review-button-row {
+	margin-bottom: 10px;
+}
+
+.card.col-md {
+	margin: 1vw 1.5vw;
+}
 
 
 /* contact */

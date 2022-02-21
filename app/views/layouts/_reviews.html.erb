@@ -1,4 +1,4 @@
-<h2 class="review_title">Reviews</h2>
+<h2 class="review-title">Reviews</h2>
 <div class="row all-reviews">
 	<div class="card text-black bg-light mb-3 col-md">
 	  <div class="card-body">
@@ -30,11 +30,15 @@
 	    </blockquote>
 	  </div>
 	</div>
+	<div class="row review-button-row">
+		<div class="col-md-4">
+			<button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#review-modal">
+		  Leave a Review!
+			</button>
+		</div>
+	</div>
 </div>
 
-<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#review-modal">
-  Leave a Review!
-</button>
 
 <div class="modal fade" id="review-modal" tabindex="-1" 
 	aria-labelledby="review-modal" aria-hidden="true">
@@ -50,7 +54,7 @@
 						<%= f.text_field :name, required: true, placeholder: "Your name..." %>
 					</div>
 					<div class="mb-1" id="review-text">
-						<%= f.text_area :content, required: true, placeholder: "Your review...", maxlength: 200 %>
+						<%= f.text_area :content, required: true, placeholder: "Your review...", maxlength: 300 %>
 					</div>
 				</div>
 				<div class="modal-footer" style="align-items: flex-start;">
