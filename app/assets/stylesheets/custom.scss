@@ -52,12 +52,8 @@ p{
 }
 
 .navbar.navbar-expand-md.navbar-light {
-	border-bottom: 2px solid;
 	background-color: #fff;
 	display: inline-block;
-	width: 100%;
-	width: 94vw;
-  margin-left: 3vw;
 }
 
 .container.navbar_container {
@@ -105,48 +101,34 @@ p{
 
 
 
-.jumbotron {
-	background-color: transparent;
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
 
-.center.jumbotron {
-	position: relative;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 40px;
-	margin-bottom: 40px;
+.main-body {
+	margin-top: 95px;
 }
 
-.center.jumbotron::before {
-	content: "";
-	background-image: url(Homebackground.jpg);
+.home-banner {
+	background-image: url(Reviewbackground2.jpg);
 	background-size: cover;
-	position: absolute;
-	top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-	background-position: 1px -57px;
-	opacity: .7;
-	border-radius: 20px;
-}
-
-.center.jumbotron > h1, p {
-	position: relative;
+	color: white;
+	padding: 3em 3em 7em;
 }
 
 .nav > li > a {
 	padding: 10px 10px;
 }
 
-.main_body {
-	margin-top: 25px;
-	margin-left: 50px;
-	margin-right: 50px;
-}
-
 .col-md-6 > img {
 	max-width: 100%;
+}
+
+.home-artwork {
+	border-bottom: 1px solid lightgray;
+	padding: 2em 3em;
 }
 
 
@@ -207,7 +189,7 @@ p{
 
 
 footer {
-  margin-top: 45px;
+  margin: 2em;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
@@ -266,12 +248,6 @@ footer ul li {
 .artworks_content {
 	padding-bottom: 15px;
 	border-bottom: 1px solid lightgray;
-}
-
-.home-artwork {
-	padding-bottom: 15px;
-	border-bottom: 1px solid lightgray;
-	margin-bottom: 10px
 }
 
 .content_title {
@@ -347,9 +323,9 @@ ol {
 }
 
 .all-reviews {
-	background-image: url(Reviewbackground2.jpg);
+	background-image: url(Reviewbackground.jpg);
 	background-size: cover;
-	padding: 2vw;
+	padding: 2em;
 }
 
 h2 {
@@ -358,6 +334,11 @@ h2 {
 
 .review-button-row {
 	margin-bottom: 10px;
+	justify-content: right;
+}
+
+.review-button {
+	display: contents;
 }
 
 .card.col-md {

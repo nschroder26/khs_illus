@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
   <div class="container-fluid">
     <%= link_to image_tag("KHSlogo.jpg", alt: "Site logo", id: "logo"), 
       root_path %>
@@ -10,7 +10,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto navbar-nav-scroll"> 
           <li class="nav-item"><%= link_to "Home", root_path %></li>
           <li class="nav-item"><%= link_to "Gallery", gallery_path %></li>
           <li class="nav-item"><%= link_to "About", about_path %></li>
