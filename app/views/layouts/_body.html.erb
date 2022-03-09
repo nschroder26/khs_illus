@@ -1,15 +1,10 @@
 <div class="row home-artwork">
 	<% if Artwork.any? %>
-		<h4 class="artworks_title">
-			<%= @artwork.title %>
-		</h4>
-		<div class="col-md-6">
-			<%= @artwork.content %>
-		</div>
-		<div class="col-md-6">
-			<% if @artwork.image.attached? %>
-				<%= image_tag @artwork.image %>
-			<% end %>
-		</div>
+		<% if @artwork.image.attached? %>
+			<%= image_tag @artwork.image %>
+			<h4 class="home-artworks-title">
+				<%= @artwork.title %>
+			</h4>
+		<% end %>
 	<% end %>
 </div>

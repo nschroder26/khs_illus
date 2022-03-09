@@ -1,22 +1,24 @@
 <% provide(:title, "Gallery") %>
 
-<% if logged_in? %>
- 	<div class="row">
-		<section class="artwork_form">
-			<%= render 'shared/artwork_form' %>
-		</section>
-	</div>
-<% end %>
-
-<div class="coll">
-	<% if @artworks.any? %>
-		<h1 class="gallery_title">Gallery</h1>
-		<div class="artworks">
-			<%= paginate @artworks %>
-			<%= render @artworks %>
-			<%= paginate @artworks %>
+<div class="general-page">
+	<% if logged_in? %>
+		<div class="row">
+			<section class="artwork-form">
+				<%= render 'shared/artwork_form' %>
+			</section>
 		</div>
 	<% end %>
+
+	<div class="coll">
+		<% if @artworks.any? %>
+			<h1 class="gallery-title">Gallery</h1>
+			<div class="artworks">
+				<%= paginate @artworks %>
+				<%= render @artworks %>
+				<%= paginate @artworks %>
+			</div>
+		<% end %>
+	</div>
 </div>
 
 
