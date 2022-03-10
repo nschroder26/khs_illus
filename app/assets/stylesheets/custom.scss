@@ -51,8 +51,7 @@ p{
 #logo {
 	float: left;
 	width: 75px;
-	margin: 10px;
-    margin-left: 0px;
+	margin: 1vw;
 }
 
 .navbar.navbar-expand-md.navbar-light {
@@ -68,6 +67,10 @@ p{
 
 .navbar-right {
 	margin-top: 45px;
+}
+
+.nav-item {
+	margin-right: .5rem;
 }
 
 .nav-item a {
@@ -90,6 +93,7 @@ p{
 
 .navbar-nav {
 	margin-left: 15px;
+	font-size: 1.1rem;
 }
 
 #ig-logo {
@@ -132,11 +136,12 @@ html,body {
 
 .home-artwork {
 	border-bottom: 1px solid lightgray;
-	padding: 5vw 15vw;
+	padding: 5vw 15vw 2vw;
 }
 
 .home-artworks-title {
-	display: content;
+	text-align: center;
+    padding: 1rem;
 }
 
 

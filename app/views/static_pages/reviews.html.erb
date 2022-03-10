@@ -1,9 +1,11 @@
 <div class="general-page">
 	<div class="col">
 		<% if @reviews.any? %>
+			<%= paginate @reviews %>
 			<div class="reviews-body">
 				<%= render @reviews %>
 			</div>
+			<%= paginate @reviews %>
 		<% end %>
 	</div>
 </div>

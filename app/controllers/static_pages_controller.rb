@@ -18,6 +18,6 @@ class StaticPagesController < ApplicationController
   end
 
   def reviews
-    @reviews = Review.all
+    @reviews = Review.order(:id).page params[:page]
   end
 end
