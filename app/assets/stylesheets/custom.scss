@@ -242,6 +242,7 @@ footer ul li {
 .artworks {
 	list-style: none;
 	padding: 0px 15px;
+	border-top: 1px solid lightgray;
 }
 
 .artworks_title, .artworks_content {
@@ -256,13 +257,27 @@ footer ul li {
 	margin-top: 20px;
 }
 
-.artworks_title {
-	margin-top: 25px;
+.artworks-title {
+	display: inline;
+	margin-right: 1rem;
 }
 
-.artworks_content {
-	padding-bottom: 15px;
+.artwork-delete {
+	display: inline;
+}
+
+.artworks-content {
+	padding: 1vw 0vw 3vw;
 	border-bottom: 1px solid lightgray;
+}
+
+.gallery-col img {
+	max-width: 100%;
+	padding: 0vw 4vw;
+}
+
+.artworks li {
+	padding-top: 2vw;
 }
 
 .content_title {
@@ -326,6 +341,7 @@ ol {
 
 .reviews-body {
 	list-style: none;
+	border-bottom: 1px solid lightgrey;
 }
 
 .reviews-body li {

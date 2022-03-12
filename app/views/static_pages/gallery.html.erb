@@ -12,11 +12,11 @@
 	<div class="coll">
 		<% if @artworks.any? %>
 			<h1 class="gallery-title">Gallery</h1>
+			<%= paginate @artworks %>
 			<div class="artworks">
-				<%= paginate @artworks %>
 				<%= render @artworks %>
-				<%= paginate @artworks %>
 			</div>
+			<%= paginate @artworks %>
 		<% end %>
 	</div>
 </div>

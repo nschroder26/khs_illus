@@ -1,16 +1,18 @@
 <li id="artwork-<%= artwork.id %>">
-	<h4 class="artworks_title"><%= artwork.title %></h4>
-	<div>
+	<h4 class="artworks-title">
+		<%= artwork.title %>
+	</h4>
+	<div class="artwork-delete">
 		<% if logged_in? %>
 		 	<%= link_to "Delete", artwork, method: :delete,
 		 		data: { confirm: "Are you sure?" } %>
 		<% end %>
 	</div>
-	<span class="row artworks_content">
-		<div class="col-md-6">
+	<span class="row artworks-content">
+		<!-- <div class="col-md-6">
 			<%= artwork.content %>
-		</div>
-		<div class="col-md-6">
+		</div> -->
+		<div class="col gallery-col">
 			<% if artwork.image.attached? %>
 					<%= image_tag artwork.image %>
 			<% end %>
