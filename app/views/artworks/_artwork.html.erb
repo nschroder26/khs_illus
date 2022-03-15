@@ -1,7 +1,11 @@
 <li id="artwork-<%= artwork.id %>">
 	<h4 class="artworks-title">
 		<%= artwork.title %>
+		<h6>
+			<%= artwork.content %>
+		</h6>
 	</h4>
+	
 	<div class="artwork-delete">
 		<% if logged_in? %>
 		 	<%= link_to "Delete", artwork, method: :delete,
