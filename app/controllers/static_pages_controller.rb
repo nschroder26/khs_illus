@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
 
   def gallery
     @artworks = Artwork.order(:id).page params[:page]
+  end
+
+  def gallerymod
     @artwork = Artwork.create if logged_in?
   end
 

@@ -266,11 +266,6 @@ footer ul li {
 	display: inline;
 }
 
-.artworks-content {
-	padding: 1vw 0vw 3vw;
-	border-bottom: 1px solid lightgray;
-}
-
 .gallery-col img {
 	max-width: 100%;
 	padding: 0vw 4vw;
@@ -280,55 +275,23 @@ footer ul li {
 	padding-top: 2vw;
 }
 
-.content_title {
-	margin-bottom: 5px;
-}
 
-#artwork_content {
-	  resize: none;
-    height: 200px;
-    width: 100%;
-}
 
-.submit_button {
-	margin-bottom: 15px;
-	float: right;
-}
 
-.btn.btn-primary {
-	margin-top: 0px;
-}
+/* gallery update */
 
-.password-entry {
-	margin-bottom: 10px;
-}
 
 .alert {
 	margin: 3% 10% 0%;
 }
 
-.col-md-6 > button {
-	padding: 0px;
-	border: none;
+.content-field {
+	margin: .7rem 0;
 }
 
-.col-md-6 > button > img {
-	max-width: 100%;
+.new-art-submit {
+	margin-top: .7rem;
 }
-
-.img_link {
-	border: none;
-	background: none;
-}
-
-.col-md-6 {
-	margin: 10px 0px;
-}
-
-ol {
-	padding: none
-}
-
 
 
 /* reviews */

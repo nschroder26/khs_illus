@@ -1,13 +1,18 @@
 <%= form_with(model: @artwork, local: true) do |f| %>
 	<%= hidden_field_tag :searching, true %>
-	<div class="content_title">
+	<div class="content-field">
 		<%= f.text_field :title, required: true, placeholder: "Artwork title..." %>
 	</div>
-	<div class="content_field">
-		<%= f.text_area :content, required: true, placeholder: "Artwork description..." %>
+	<div class="content-field">
+		<%= f.text_field :location, required: true, placeholder: "Artwork location..." %>
+	</div>
+	<div class="content-field">
+		<%= f.text_field :medium, required: true, placeholder: "Artwork medium..." %>
 	</div>
 	<span class="image">
 		<%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
 	</span>
-	<%= f.submit "Submit", class: "btn btn-primary submit_button" %> 
+	<div>
+		<%= f.submit "Submit", class: "btn btn-primary new-art-submit" %>
+	</div>
 <% end %>

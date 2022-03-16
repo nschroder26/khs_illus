@@ -5,7 +5,7 @@ class ArtworksController < ApplicationController
 		@artwork = Artwork.create(artwork_params)
 		if @artwork.save
 			flash[:success] = "Artwork saved!"
-			redirect_to gallery_url
+			redirect_to gallerymod_url
 		else
 			render 'static_pages/gallery'
 		end
@@ -20,6 +20,6 @@ class ArtworksController < ApplicationController
 	private
 
 		def artwork_params
-			params.require(:artwork).permit(:title, :content, :image)
+			params.require(:artwork).permit(:title, :location, :medium, :image)
 		end
 end

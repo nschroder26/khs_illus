@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   post '/', to: 'reviews#create'
   get '/reviews', to: 'static_pages#reviews'
+  get '/gallerymod', to: 'static_pages#gallerymod'
+  post '/gallerymod', to: 'artworks#create'
   resources :users
   resources :artworks,  only: [:create, :destroy]
   resources :reviews, only: [:create, :destroy]
