@@ -7,12 +7,15 @@
 	<div class="update-body">
 		<h4 class="update-list">Gallery List</h4>
 		<% if @items.any? %>
-			<div class="artworks-list">
+			<div class="container artworks-list">
 				<%= render :partial => "artworks/item", 
 				:collection => @items, 
 				:as => :artwork %>
 			</div>
 		<% end %>
+		<div class="update-art-button">
+			<%= submit_tag "Save", class: "btn btn-primary" %>
+		</div>
 	</div>
 </div>
 

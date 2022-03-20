@@ -1,5 +1,5 @@
 class ArtworksController < ApplicationController
-	before_action :logged_in_user, only: [:create, :destroy]
+	before_action :logged_in_user, only: [:create, :update, :destroy]
 
 	def create
 		@artwork = Artwork.create(artwork_params)
@@ -9,6 +9,15 @@ class ArtworksController < ApplicationController
 		else
 			render 'static_pages/gallery'
 		end
+	end
+
+	def update
+		@artwork = Artwork.find_by(params[:id])
+		if @artwork.update(artwork_params)
+			flash[:success] = "Artwork order updated!"
+			redirect_to gallerymod_url
+		else
+			redirect_to gallerymod_url
 	end
 
 	def destroy

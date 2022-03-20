@@ -259,6 +259,10 @@ footer ul li {
 	margin-top: .7rem;
 }
 
+.admin-login label {
+	margin: .3rem 0;
+}
+
 
 /* gallery */
 
@@ -330,7 +334,7 @@ footer ul li {
 
 .update-body {
 	padding: 0vw 4vw;
-	margin-top: 2vw;
+	margin: 2vw 0 3vw;
 }
 
 .artworks-list {
@@ -344,8 +348,12 @@ footer ul li {
 
 .list-thumbnail img {
 	max-width: 100%;
-	padding: 1rem 4rem;
+	padding: 1rem;
   max-height: 6rem;
+}
+
+.artwork-delete, .artwork-id {
+	text-align: center;
 }
 
 .artwork-title, .artwork-delete, .artwork-id{
@@ -354,6 +362,11 @@ footer ul li {
 
 .artwork-id input {
 	width: 2.2rem;
+}
+
+.update-art-button {
+	margin: .5rem 0;
+	float: right;
 }
 
 
@@ -401,6 +414,7 @@ h2 {
 .card.col-md {
 	margin: 1vw 1.5vw;
 }
+
 
 
 /* contact */
