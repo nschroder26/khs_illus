@@ -16,9 +16,12 @@
           <li class="nav-item"><%= link_to "About", about_path %></li>
           <li class="nav-item"><%= link_to "Contact", contact_path %></li>
           <% if logged_in? %>
-            <li class="nav-item">
-              <%= link_to "Reviews", reviews_path %>
-              <%= link_to "Gallery Update", gallerymod_path %>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle admin-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="admin-item"><%= link_to "Reviews", reviews_path %></li>
+                <li class="admin-item"><%= link_to "Gallery Update", gallerymod_path %></li>
+              </ul>
             </li>
           <% end %>
         </ul>

@@ -71,6 +71,7 @@ p{
 
 .nav-item {
 	margin-right: .5rem;
+	align-self: center;
 }
 
 .nav-item a {
@@ -79,8 +80,30 @@ p{
 	margin: 5px;
 }
 
+#navbarDropdown {
+	color: #000000c7;
+	margin-left: 0px;
+}
+
+.dropdown-menu.show {
+	padding: unset;
+	margin: unset;
+}
+
 .nav-item a:hover {
 	color: black
+}
+
+#navbarDropdown:hover {
+	color: black
+}
+
+.admin-item {
+	padding: 0.5rem;
+}
+
+.admin-item:hover {
+	background-color: #f3eeee;
 }
 
 .navbar-light {
