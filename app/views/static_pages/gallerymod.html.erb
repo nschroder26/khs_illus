@@ -1,9 +1,20 @@
 <div class="general-page">
-	<% if logged_in? %>
-		<div class="row">
-			<section class="artwork-form">
-				<%= render 'shared/artwork_form' %>
-			</section>
-		</div>
-	<% end %>
+	<div class="row">
+		<section class="artwork-form">
+			<%= render 'shared/artwork_form' %>
+		</section>
+	</div>
+	<div class="update-body">
+		<h4 class="update-list">Gallery List</h4>
+		<% if @items.any? %>
+			<div class="artworks-list">
+				<%= render :partial => "artworks/item", 
+				:collection => @items, 
+				:as => :artwork %>
+			</div>
+		<% end %>
+	</div>
 </div>
+
+
+

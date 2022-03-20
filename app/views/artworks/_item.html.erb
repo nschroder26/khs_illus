@@ -1,0 +1,15 @@
+<li id="artwork-<%= artwork.id %>" class="row artwork-item">
+	<div class="col-md-4 list-thumbnail">
+		<%= image_tag artwork.image %>
+	</div>
+	<h4 class="col-md-4 artwork-title">
+		<%= artwork.title %>
+	</h4>
+	<div class="col-md-2 artwork-id">
+		<%= text_field :id, required: true%>
+	</div>
+	<div class="col-md-2 artwork-delete">
+		<%= link_to "Delete", artwork, method: :delete,
+		 		data: { confirm: "Are you sure?" } %>
+	</div>
+</li>

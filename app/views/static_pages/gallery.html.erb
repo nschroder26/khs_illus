@@ -2,13 +2,13 @@
 
 <div class="general-page">
 	<div class="coll">
-		<% if @artworks.any? %>
-			<h1 class="gallery-title">Gallery</h1>
-			<%= paginate @artworks %>
+		<h1 class="gallery-title">Gallery</h1>
+		<% if @artwork.any? %>
+			<%= paginate @artwork %>
 			<div class="artworks">
-				<%= render @artworks %>
+				<%= render @artwork %>
 			</div>
-			<%= paginate @artworks %>
+			<%= paginate @artwork %>
 		<% end %>
 	</div>
 </div>

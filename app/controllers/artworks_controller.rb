@@ -14,7 +14,7 @@ class ArtworksController < ApplicationController
 	def destroy
 		Artwork.find(params[:id]).destroy
 		flash[:success] = "Artwork deleted"
-		redirect_to gallery_url
+		redirect_to gallerymod_url
 	end
 
 	private

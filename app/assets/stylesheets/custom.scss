@@ -232,7 +232,9 @@ footer ul li {
 
 /* login page */
 
-
+.login-button {
+	margin-top: .7rem;
+}
 
 
 /* gallery */
@@ -245,10 +247,6 @@ footer ul li {
 	border-top: 1px solid lightgray;
 }
 
-.artworks_title, .artworks_content {
-	display: block;
-}
-
 .gallery-title{
 	margin-bottom: 20px;
 }
@@ -258,8 +256,20 @@ footer ul li {
 }
 
 .artworks-title {
-	margin-right: 1rem;
+	margin: 0rem;
 	text-align: center;
+}
+
+.artworks-location {
+	text-align: center;
+	font-weight: unset;
+	font-style: italic;
+}
+
+.artworks-medium {
+	font-weight: unset;
+	padding: 0vw 4vw;
+	font-style: italic;
 }
 
 .artwork-delete {
@@ -272,7 +282,8 @@ footer ul li {
 }
 
 .artworks li {
-	padding-top: 2vw;
+	padding: 1vw 0vw 2vw;
+	border-bottom: 1px solid lightgray;
 }
 
 
@@ -289,8 +300,37 @@ footer ul li {
 	margin: .7rem 0;
 }
 
+
 .new-art-submit {
 	margin-top: .7rem;
+}
+
+.update-body {
+	padding: 0vw 4vw;
+	margin-top: 2vw;
+}
+
+.artworks-list {
+	list-style: none;
+	border-top: 1px solid lightgray;
+}
+
+.artwork-item {
+	border-bottom: 1px solid lightgray;
+}
+
+.list-thumbnail img {
+	max-width: 100%;
+	padding: 1rem 4rem;
+  max-height: 6rem;
+}
+
+.artwork-title, .artwork-delete, .artwork-id{
+	align-self: center;
+}
+
+.artwork-id input {
+	width: 2.2rem;
 }
 
 
