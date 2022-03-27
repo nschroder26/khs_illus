@@ -18,6 +18,7 @@ class ArtworksController < ApplicationController
 			redirect_to gallerymod_url
 		else
 			redirect_to gallerymod_url
+		end
 	end
 
 	def destroy

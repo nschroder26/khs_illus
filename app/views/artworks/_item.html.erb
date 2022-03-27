@@ -1,15 +1,14 @@
-<li id="artwork-<%= artwork.id %>" class="row artwork-item">
-	<div class="col list-thumbnail">
-		<%= image_tag artwork.image %>
-	</div>
-	<h4 class="col-md-6 artwork-title">
-		<%= artwork.title %>
-	</h4>
-	<div class="col artwork-id">
-		<%= text_field :id, required: true%>
-	</div>
-	<div class="col artwork-delete">
-		<%= link_to "Delete", artwork, method: :delete,
-		 		data: { confirm: "Are you sure?" } %>
+<li id="artwork-<%= artwork.id %>" class="artwork-item card">
+	<div class="row">
+		<div class="col list-thumbnail">
+			<%= image_tag artwork.image %>
+		</div>
+		<h4 class="col-sm-6 artwork-title">
+			<%= artwork.title %>
+		</h4>
+		<div class="col artwork-delete">
+			<%= link_to "Delete", artwork, method: :delete,
+			 		data: { confirm: "Are you sure?" } %>
+		</div>
 	</div>
 </li>

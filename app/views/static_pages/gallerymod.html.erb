@@ -4,20 +4,19 @@
 			<%= render 'shared/artwork_form' %>
 		</section>
 	</div>
-	<div class="update-body">
-		<h4 class="update-list">Gallery List</h4>
-		<% if @items.any? %>
-			<div class="container artworks-list">
-				<%= render :partial => "artworks/item", 
-				:collection => @items, 
-				:as => :artwork %>
+	<div class="update-card card">
+		<h4 class="update-title">Gallery List</h4>
+		<div class="update-body">
+			<% if @items.any? %>
+				<div class="container artworks-list">
+					<%= render :partial => "artworks/item", 
+					:collection => @items, 
+					:as => :artwork %>
+				</div>
+			<% end %>
+			<div class="update-art-button">
+				<%= submit_tag "Save", class: "btn btn-primary" %>
 			</div>
-		<% end %>
-		<div class="update-art-button">
-			<%= submit_tag "Save", class: "btn btn-primary" %>
 		</div>
 	</div>
-</div>
-
-
-
+</div>=
