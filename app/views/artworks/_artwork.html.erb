@@ -3,9 +3,12 @@
 		<%= artwork.title %>
 	</h4>
 
-	<h6 class="artworks-location">
-		<%= artwork.location %>
-	</h6>
+	
+	<% if artwork.location? %>
+		<h6 class="artworks-location">
+			<%= artwork.location %>
+		</h6>
+	<% end %>
 
 	<span class="row artworks-content">
 		<div class="col gallery-col">
