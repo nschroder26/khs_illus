@@ -53,6 +53,9 @@
 					<div class="mb-3">
 						<%= f.text_field :name, required: true, placeholder: "Your name..." %>
 					</div>
+					<div class="mb-3 flagging-field">
+						<%= f.text_field :subtitle, required: false, placeholder: "Leave blank..." %>
+					</div>
 					<div class="mb-1" id="review-text">
 						<%= f.text_area :content, required: true, placeholder: "Your review...", maxlength: 300 %>
 					</div>

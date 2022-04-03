@@ -3,11 +3,16 @@ class ReviewsController < ApplicationController
 
 	def create
 		@review = Review.create(review_params)
-		if @review.save
-			flash[:success] = "Review saved, thank you!"
-			redirect_to root_url
+		if @review.subtitle.length == 0
+			if @review.save
+				flash[:success] = "Review saved, thank you!"
+				redirect_to root_url
+			else
+				flash[:error] = "We could not save your submission. Please try again"
+				redirect_to root_url
+			end
 		else
-			flash[:error] = "We could not save your submission. Please try again"
+			@review.destroy
 			redirect_to root_url
 		end
 	end
@@ -21,6 +26,6 @@ class ReviewsController < ApplicationController
 	private
 
 		def review_params
-			params.permit(:name, :content)
+			params.permit(:name, :content, :subtitle)
 		end
 end
