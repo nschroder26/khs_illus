@@ -8,7 +8,7 @@ class ArtworksControllerTest < ActionDispatch::IntegrationTest
 
   test "should not allow create unless logged in" do
     assert_no_difference 'Artwork.count' do
-      post artworks_path, params: { artwork: { content: "Lorem ipsum"} }
+      post artworks_path, params: { artwork: { title: "Sample Title"} }
     end
     assert_redirected_to login_url
   end
