@@ -3,17 +3,11 @@ class ReviewsController < ApplicationController
 
 	def create
 		@review = Review.create(review_params)
-		if @review.subtitle.length == 0
-			if @review.save
-				flash[:success] = "Review saved, thank you!"
-				redirect_to root_url
-			else
-				flash[:error] = "We could not save your submission. Please try again"
-				redirect_to root_url
-			end
-		else
-			@review.destroy
+		if @review.save
+			flash[:success] = "Review saved, thank you!"
 			redirect_to root_url
+		else
+			render :new
 		end
 	end
 
