@@ -85,5 +85,5 @@ production:
   encoding: unicode
   database: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  user: u10ntv53cgpk19
+  username: u10ntv53cgpk19
   password: pe0182b8d94094de6692d0c2090ee749e76a09f7ad74f6352d9aec2663b4c987d
